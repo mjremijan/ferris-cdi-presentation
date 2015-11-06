@@ -1,6 +1,7 @@
 package org.ferris.cdi.research;
 
 import javax.enterprise.inject.spi.CDI;
+import org.apache.log4j.Logger;
 
 /**
  *
@@ -8,16 +9,18 @@ import javax.enterprise.inject.spi.CDI;
  */
 public class Main {
 
+    public static final Logger log = Logger.getLogger(Main.class);
     public static void main(String[] args) {
-        System.out.printf(">>> ENTER Main#main\n");
+        log.debug(">>> ENTER Main#main\n");
         try (CDI<Object> cdi = CDI.getCDIProvider().initialize()) {
             // start the container, retrieve a bean and do work with it
-            System.out.printf(">>> CDI bootstrap complete. \n");
+            log.debug(">>> CDI bootstrap complete. \n");
             
             // get my first bean
             MyBean myBean = cdi.select(MyBean.class).get();
-            System.out.printf(">>> MyBean name=\"%s\"\n", myBean.getName());
-            System.out.printf(">>> MyBean accountId=\"%s\"\n", myBean.getAccountId());
+            log.debug(String.format(">>> MyBean name=\"%s\"\n", myBean.getName()));
+            log.debug(String.format(">>> MyBean accountId=\"%s\"\n", myBean.getAccountId()));
+            
         } catch (Exception e) {
             e.printStackTrace();
         }
