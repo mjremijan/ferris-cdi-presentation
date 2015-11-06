@@ -1,5 +1,6 @@
 package org.ferris.cdi.shared;
 
+
 /**
  *
  * @author <a href="mailto:mjremijan@yahoo.com">Michael Remijan</a>
