@@ -1,7 +1,7 @@
 package org.ferris.cdi.research;
 
-import javax.inject.Inject;
-import org.ferris.cdi.shared.AccountService;
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
 
 /**
  *
@@ -9,9 +9,6 @@ import org.ferris.cdi.shared.AccountService;
  */
 public class MyBean {
 
-    @Inject
-    AccountService accountService;
-    
     private String name;
     
     public MyBean() {
@@ -26,7 +23,13 @@ public class MyBean {
         this.name = name;
     }
     
-    public String getAccountId() {
-        return accountService.getAccountId();
+    @PostConstruct
+    public void post() {
+        System.out.println("********* postConstruct ");
+    }
+    
+    @PreDestroy
+    public void pre() {
+        System.out.println("********* preDestory ");
     }
 }

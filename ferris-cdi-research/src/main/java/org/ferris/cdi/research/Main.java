@@ -1,7 +1,10 @@
 package org.ferris.cdi.research;
 
+import javax.enterprise.event.Event;
 import javax.enterprise.inject.spi.CDI;
+import javax.enterprise.util.TypeLiteral;
 import org.apache.log4j.Logger;
+import org.ferris.cdi.shared.SharedService;
 
 /**
  *
@@ -16,10 +19,27 @@ public class Main {
             // start the container, retrieve a bean and do work with it
             log.debug(">>> CDI bootstrap complete. \n");
             
-            // get my first bean
+            // Get my first bean example
             MyBean myBean = cdi.select(MyBean.class).get();
             log.debug(String.format(">>> MyBean name=\"%s\"\n", myBean.getName()));
-            log.debug(String.format(">>> MyBean accountId=\"%s\"\n", myBean.getAccountId()));
+            
+            // Get bean from shared library example
+            SharedService sharedService = cdi.select(SharedService.class).get();
+            log.debug(String.format(">>> SharedService name=\"%s\"\n", sharedService.getName()));
+            
+            // Parameterized type example
+            ParameterizedTypeExample parameterizedTypeExample = cdi.select(ParameterizedTypeExample.class).get();
+            parameterizedTypeExample.setOrder();
+            parameterizedTypeExample.setProduct();
+            parameterizedTypeExample.print();
+            parameterizedTypeExample.setOrder();
+            parameterizedTypeExample.print();
+            
+            // Event
+            Event<StartupEvent> e;
+            e = cdi.select(new TypeLiteral<Event<StartupEvent>>(){}).get();
+            e.fire(new StartupEvent());
+            
             
         } catch (Exception e) {
             e.printStackTrace();
