@@ -1,4 +1,4 @@
-package org.ferris.cdi.research.interfaces;
+package org.ferris.cdi.research.sharedproject;
 
 import javax.enterprise.inject.spi.CDI;
 
@@ -14,8 +14,8 @@ public class Main {
         System.out.printf(">>> Initialize container \n");
         CDI<Object> cdi = CDI.getCDIProvider().initialize();        
         
-        HelloWorldService ex 
-            = cdi.select(HelloWorldService.class).get();   
-        System.out.printf(">>>> %s, %s\n", ex.getHello(), ex.getClass().getName());
+        SharedProjectExample ex 
+            = cdi.select(SharedProjectExample.class).get();   
+        ex.printName();
     }
 }
