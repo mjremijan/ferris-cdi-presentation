@@ -2,7 +2,7 @@ package org.ferris.cdi.research.producer;
 
 /**
  *
- * @author <a href="mailto:mjremijan@yahoo.com">Michael Remijan</a>
+ * @author Michael Remijan mjremijan@yahoo.com @mjremijan
  */
 public class Word {
     private String value;

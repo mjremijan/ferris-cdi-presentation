@@ -6,7 +6,7 @@ import javax.enterprise.inject.Produces;
 
 /**
  *
- * @author <a href="mailto:mjremijan@yahoo.com">Michael Remijan</a>
+ * @author Michael Remijan mjremijan@yahoo.com @mjremijan
  */
 public class IntegerListProducer {
     @Produces
