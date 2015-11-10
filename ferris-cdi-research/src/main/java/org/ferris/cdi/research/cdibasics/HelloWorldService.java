@@ -1,4 +1,4 @@
-package org.ferris.cdi.research.basicdi;
+package org.ferris.cdi.research.cdibasics;
 
 import javax.inject.Inject;
 

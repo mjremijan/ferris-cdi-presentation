@@ -1,4 +1,4 @@
-package org.ferris.cdi.research.basicdi;
+package org.ferris.cdi.research.cdibasics;
 
 import javax.inject.Inject;
 
@@ -6,16 +6,16 @@ import javax.inject.Inject;
  *
  * @author <a href="mailto:mjremijan@yahoo.com">Michael Remijan</a>
  */
-public class MethodInjectionExample {
+public class ConstructionInjectionExample {
     
     private HelloWorldService helloWorld;
     
     @Inject
-    public void setHelloWorldService(HelloWorldService helloWorld) {
+    public ConstructionInjectionExample(HelloWorldService helloWorld) {
         this.helloWorld = helloWorld;
     }
     
     public void printHello() {
-        System.out.printf(">>>> InitializerMethodInjectionExample %s\n", helloWorld.getHello());
+        System.out.printf(">>>> ConstructionInjectionExample %s\n", helloWorld.getHello());
     }
 }
