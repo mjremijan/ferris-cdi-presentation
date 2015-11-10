@@ -1,4 +1,4 @@
-package org.ferris.cdi.research;
+package org.ferris.cdi.research.injectionpoint;
 
 
 import javax.enterprise.inject.Produces;
@@ -13,6 +13,8 @@ public class LoggerProducer {
 
     @Produces
     public Logger getLogger(InjectionPoint ip) {
-        return Logger.getLogger(ip.getMember().getDeclaringClass().getName());
+        String name = ip.getMember().getDeclaringClass().getName();
+        System.out.printf("|||| Get logger for %s\n",name);
+        return Logger.getLogger(name);
     }
 }
