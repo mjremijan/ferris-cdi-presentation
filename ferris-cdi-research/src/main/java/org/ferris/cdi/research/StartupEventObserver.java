@@ -6,7 +6,7 @@ import org.apache.log4j.Logger;
 
 /**
  *
- * @author <a href="mailto:mjremijan@yahoo.com">Michael Remijan</a>
+ * @author Michael Remijan mjremijan@yahoo.com @mjremijan
  */
 public class StartupEventObserver {
 

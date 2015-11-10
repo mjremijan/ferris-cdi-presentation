@@ -2,7 +2,7 @@ package org.ferris.cdi.research;
 
 /**
  *
- * @author <a href="mailto:mjremijan@yahoo.com">Michael Remijan</a>
+ * @author Michael Remijan mjremijan@yahoo.com @mjremijan
  */
 public class Product {
     public static int counter = 0;

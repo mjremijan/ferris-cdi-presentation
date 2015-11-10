@@ -1,4 +1,4 @@
-package org.ferris.cdi.research.sharedproject;
+package org.ferris.cdi.research.qualifiers;
 
 import javax.enterprise.inject.spi.CDI;
 
@@ -14,8 +14,12 @@ public class Main {
         System.out.printf(">>> Initialize container \n");
         CDI<Object> cdi = CDI.getCDIProvider().initialize();        
         
-        SharedProjectExample ex 
-            = cdi.select(SharedProjectExample.class).get();   
-        ex.printName();
+        DatabaseExample dbex 
+            = cdi.select(DatabaseExample.class).get();        
+        dbex.save();
+        
+        JMSExample jmsex 
+            = cdi.select(JMSExample.class).get();        
+        jmsex.save();
     }
 }

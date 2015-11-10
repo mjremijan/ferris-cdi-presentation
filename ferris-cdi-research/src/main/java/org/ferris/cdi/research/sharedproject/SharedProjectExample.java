@@ -5,7 +5,7 @@ import org.ferris.cdi.shared.SharedService;
 
 /**
  *
- * @author <a href="mailto:mjremijan@yahoo.com">Michael Remijan</a>
+ * @author Michael Remijan mjremijan@yahoo.com @mjremijan
  */
 public class SharedProjectExample {
 
