@@ -7,7 +7,7 @@ import org.jboss.weld.environment.se.events.ContainerInitialized;
 
 /**
  *
- * @author <a href="mailto:mjremijan@yahoo.com">Michael Remijan</a>
+ * @author Michael Remijan mjremijan@yahoo.com @mjremijan
  */
 public class ContainerInitializedObserver {
     public void bootstrapped(@Observes ContainerInitialized event, @Parameters List<String> parameters) {
