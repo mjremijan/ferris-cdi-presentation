@@ -8,7 +8,7 @@ import javax.inject.Inject;
  * @author Michael Remijan mjremijan@yahoo.com @mjremijan
  */
 @Vetoed
-public class AmbiguousExceptionExample {
+public class AmbiguousExample {
     @Inject
-    private Service service;
+    private AmbiguousService service;
 }

@@ -16,8 +16,8 @@ public class AmbiguousMain {
         CDI<Object> cdi = CDI.getCDIProvider().initialize();        
         
         try {
-            AmbiguousExceptionExample ex 
-                = cdi.select(AmbiguousExceptionExample.class).get();        
+            AmbiguousExample ex 
+                = cdi.select(AmbiguousExample.class).get();        
         } catch (Exception e) {
             e.printStackTrace();
             throw e;

@@ -8,7 +8,7 @@ import javax.inject.Inject;
  * @author Michael Remijan mjremijan@yahoo.com @mjremijan
  */
 @Vetoed
-public class UnsatisfiedExceptionExample {
+public class UnsatisfiedExample {
     @Inject
-    private MissingImplementation missingImplementation;
+    private UnsatisfiedImplementation missingImplementation;
 }

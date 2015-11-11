@@ -16,8 +16,8 @@ public class UnsatisfiedMain {
         CDI<Object> cdi = CDI.getCDIProvider().initialize();        
         
         try {
-            UnsatisfiedExceptionExample ex 
-                = cdi.select(UnsatisfiedExceptionExample.class).get();        
+            UnsatisfiedExample ex 
+                = cdi.select(UnsatisfiedExample.class).get();        
         } catch (Exception e) {
             e.printStackTrace();
             throw e;
