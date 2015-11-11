@@ -10,10 +10,8 @@ import static org.ferris.cdi.research.qualifiers.Storage.StorageType.JMS;
 //@JMS
 @Storage(value=JMS)
 public class JMSOrderService implements OrderService {
-
     @Override
     public void save(Object o) {
         out.printf(">>>> @Storage post Order to JMS Queue\n");
     }
-
 }

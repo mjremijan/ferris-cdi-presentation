@@ -10,10 +10,8 @@ import static org.ferris.cdi.research.qualifiers.Storage.StorageType.DB;
 //@DB
 @Storage(value=DB)
 public class DatabaseOrderService implements OrderService {
-
     @Override
     public void save(Object o) {
         out.printf(">>>> @Storage save to database\n");
     }
-
 }

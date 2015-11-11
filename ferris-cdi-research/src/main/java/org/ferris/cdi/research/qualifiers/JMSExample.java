@@ -8,8 +8,9 @@ import static org.ferris.cdi.research.qualifiers.Storage.StorageType.JMS;
  * @author Michael Remijan mjremijan@yahoo.com @mjremijan
  */
 public class JMSExample {
-
-    @Inject @Storage(value=JMS, description="Post to queue") //@JMS
+    @Inject 
+    //@JMS
+    @Storage(value=JMS, description="Post to queue")
     private OrderService orderService;
     
     public void save() {
