@@ -10,7 +10,6 @@ import org.jboss.weld.experimental.Priority;
  * @author @author Michael Remijan mjremijan@yahoo.com @mjremijan
  */
 public class AsyncObserverA {
-
     @Inject
     protected Logger log;
     
