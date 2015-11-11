@@ -19,6 +19,5 @@ public class TalkingServiceExample {
         log.debug(talkingService.sayOne());
         log.debug(talkingService.sayTwo());
         log.debug(talkingService.sayThree());
-    }
-    
+    }    
 }

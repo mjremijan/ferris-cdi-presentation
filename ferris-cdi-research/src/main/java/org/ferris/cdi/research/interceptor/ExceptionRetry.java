@@ -9,7 +9,7 @@ import javax.interceptor.InterceptorBinding;
 
 /**
  *
- * @author <a href="mailto:mjremijan@yahoo.com">Michael Remijan</a>
+ * @author Michael Remijan mjremijan@yahoo.com @mjremijan
  */
 
 @Inherited

@@ -8,7 +8,6 @@ import org.ferris.cdi.shared.SharedService;
  * @author Michael Remijan mjremijan@yahoo.com @mjremijan
  */
 public class SharedProjectExample {
-
     @Inject
     private SharedService sharedService;
     

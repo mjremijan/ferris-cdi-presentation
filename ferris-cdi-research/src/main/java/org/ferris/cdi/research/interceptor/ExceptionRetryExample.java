@@ -8,7 +8,6 @@ import org.apache.log4j.Logger;
  * @author @author Michael Remijan mjremijan@yahoo.com @mjremijan
  */
 public class ExceptionRetryExample {
-
     @Inject    
     protected Logger log;
     

@@ -9,13 +9,12 @@ import org.apache.log4j.Logger;
 
 /**
  *
- * @author <a href="mailto:mjremijan@yahoo.com">Michael Remijan</a>
+ * @author Michael Remijan mjremijan@yahoo.com @mjremijan
  */
 @ExceptionRetry
 @Interceptor
 @Priority(Interceptor.Priority.APPLICATION)
 public class ExceptionRetryInterceptor {
-
     @Inject
     protected Logger log;
 

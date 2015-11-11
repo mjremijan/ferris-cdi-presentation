@@ -13,7 +13,6 @@ import javax.interceptor.Interceptor;
 @Decorator
 @Priority(Interceptor.Priority.APPLICATION)
 public abstract class TalkingServiceDecorator implements TalkingService {
-
     @Inject @Delegate
     TalkingService talkingService;
  
