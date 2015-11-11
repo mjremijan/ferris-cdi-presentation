@@ -4,10 +4,9 @@ import javax.enterprise.inject.spi.CDI;
 
 /**
  *
- * @author <a href="mailto:mjremijan@yahoo.com">Michael Remijan</a>
+ * @author Michael Remijan mjremijan@yahoo.com @mjremijan
  */
 public class Main {
-
     public static void main(String[] args) {
         System.out.printf(">>> ENTER Main#main\n");
         try (CDI<Object> cdi = CDI.getCDIProvider().initialize()) {
