@@ -35,6 +35,5 @@ public class WordListProducer {
         System.out.printf(">>>> Disposing list!!!\n");
         wordList.clear();
         wordList = null;
-    }
-    
+    }    
 }
