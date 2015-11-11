@@ -1,9 +1,7 @@
 package org.ferris.cdi.research.injectionpoint;
 
 import java.io.FileInputStream;
-import java.lang.annotation.Annotation;
 import java.util.Properties;
-import java.util.Set;
 import javax.enterprise.inject.Produces;
 import javax.enterprise.inject.spi.InjectionPoint;
 
@@ -12,7 +10,6 @@ import javax.enterprise.inject.spi.InjectionPoint;
  * @author @author Michael Remijan mjremijan@yahoo.com @mjremijan
  */
 public class StringProducer {
-
     private Properties props;
     
     public StringProducer() throws Exception {
