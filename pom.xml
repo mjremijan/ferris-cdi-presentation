@@ -81,5 +81,6 @@
         <module>ferris-cdi-research</module>
         <module>ferris-cdi-initialized</module>
         <module>ferris-cdi-bootstrapped</module>
+        <module>ferris-cdi-examples</module>
     </modules>    
 </project>
