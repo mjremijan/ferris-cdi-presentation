@@ -1,0 +1,6 @@
+hello
+doctor
+name
+continue
+yesterday
+tomorrow
